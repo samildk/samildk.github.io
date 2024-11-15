@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/profile.png"
   name             : "Samira Aslani"
   pronouns         : "she/her"  
   bio              : "I am part of that power which eternally wills evil and eternally works good."
