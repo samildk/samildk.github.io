@@ -12,6 +12,26 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+  <style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+  }
+</style>
 </style>
 <body>
 
@@ -41,17 +61,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <p class="w3-xlarge" style="color: white;"></p>
 </header>
 
-<!-- First Grid -->
-<!-- <div class="w3-row-padding w3-padding-62 w3-container"> -->
-<!--   <div class="w3-content"> -->
-<!--     <div class="w3-twothird"> -->
-     
-<!--     <div class="w3-third w3-center"> -->
+<section class="w3-container w3-center w3-padding-64">
+  <div class="gallery-grid">
+    <figure>
+      <img src="image/s1.jpg" alt="Description of image 1" class="gallery-image">
+      <figcaption>Caption for image 1</figcaption>
+    </figure>
+    <figure>
+      <img src="image/s2.jpg" alt="Description of image 2" class="gallery-image">
+      <figcaption>Caption for image 2</figcaption>
+    </figure>
+    <!-- Add more figures as needed -->
+  </div>
+</section>
 
-<!--       <img src="image/picture1.jpeg" alt="Simeon Bird" width="500" height="600"> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
+
+
+
+
+  
+
+  
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">“Mathematics reveals its secrets only to those who approach it with pure love, for its own beauty.”
         -Archimedes</h1>
