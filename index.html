@@ -13,13 +13,37 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
-.about-me-image {
+/* .about-me-image {
     border: 2px solid #555; /* Dark gray border */
     padding: 5px; /* Space between image and border */
     margin-top: 20px; /* Space above the image */
     margin-bottom: 20px; /* Space below the image */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
+  } */
+  /* Make images responsive and neatly sized */
+.about-me-image {
+  width: 100%;
+  max-width: 380px;   /* adjust this number to taste */
+  height: auto;
+  border: 2px solid #555;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin: 0;          /* we'll handle spacing on the figure */
+}
+
+/* Wrap + spacing for each photo block */
+.about-photo {
+  display: inline-block;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Small, gray captions under each image */
+.about-caption {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 6px;
+}
 </style>
 <body>
 
@@ -97,9 +121,14 @@ I am multipotential and highly creative. I do not claim depth in every domain ou
     </div>
 
     <div class="w3-third w3-center">
+        <figure class="about-photo">
+    <img src="me4.jpg" alt="Samira Aslani" class="about-me-image">
+  </figure>
 
-      <img src="me4.jpg" alt="Samira Aslani" width="400" class="about-me-image">
-      <img src="image/me_C.JPG" alt="Samira Aslani" width="400" class="about-me-image">
+  <figure class="about-photo">
+    <img src="image/me_C.JPG" alt="Samira Aslani" class="about-me-image">
+    <figcaption class="about-caption">Intensive Scientific Report Day | Thesis Presentation</figcaption>
+  </figure>
 
     </div>
   </div>
@@ -132,6 +161,7 @@ function myFunction() {
 
 </body>
 </html>
+
 
 
 
