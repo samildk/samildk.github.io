@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Samira Aslani</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS & Fonts -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+
+  <style>
+    body,h1,h2,h3,h4,h5,h6 { font-family: "Lato", sans-serif; }
+    .w3-bar,h1,button { font-family: "Montserrat", sans-serif; }
+    .fa-anchor,.fa-coffee { font-size:200px; }
+
+    /* Image/caption styling */
+    .about-photo {
+      display: block;
+      max-width: 320px;      /* card width; change to 280px for smaller */
+      margin: 20px auto;     /* center in the column */
+      text-align: center;
+    }
+
+    .about-me-image {
+      display: block;
+      width: 100%;           /* fills .about-photo width */
+      height: auto;
+      border: 2px solid #555;
+      padding: 5px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      margin: 0;
+    }
+
+    .about-caption {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 6px;
+      display: block;
+      text-align: center;
+    }
+
+    /* Normal paragraph sizing for About text */
+    .about-text p {
+      font-size: 1rem;       /* ~16px */
+      line-height: 1.6;
+      margin: 0 0 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="https://samildk.github.io/" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="https://samildk.github.io/cv.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CV</a>
+    <a href="https://github.com/samildk" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GitHub</a>
+    <a href="photography.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Photography</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="https://samildk.github.io/cv.pdf" class="w3-bar-item w3-button w3-padding-large">CV</a>
+    <a href="https://github.com/samildk" class="w3-bar-item w3-button w3-padding-large">GitHub</a>
+    <a href="photography.html" class="w3-bar-item w3-button w3-padding-large">Photography</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:128px 16px; background-image: url('image/artmis.jpg')">
+  <h1 class="w3-margin w3-jumbo" style="color: white;">SAMIRA ASLANI</h1>
+  <p class="w3-xlarge" style="color: white;">Cosmologist and Data Scientist</p>
+</header>
+
+<!-- Main Content -->
+<div class="w3-row-padding w3-padding-62 w3-container">
+  <div class="w3-content">
+    <div class="w3-row">
+
+      <!-- LEFT COLUMN -->
+      <div class="w3-twothird">
+        <h1>About Me</h1>
+
+        <div class="w3-padding-32 about-text">
+          <p>I am a cosmology researcher and a working data scientist. My M.Sc. at Shahid Beheshti University focused on reading the cosmic web with persistent homology, including Betti curves, persistence diagrams, and a persistent entropy metric to link topological structure with cosmological signals.</p>
+
+          <p>I have also worked on a quasar and SMBH growth study using Kramers–Moyal expansion.</p>
+
+          <p>In industry, I design and ship pragmatic vision pipelines. Recent work includes real-time video ad detection at scale and deterministic image clustering, using Python, PyTorch, OpenCV, FFmpeg, SQL/SQLAlchemy, and PCA, with reproducible code and measurable outcomes. I also teach Python and data analysis and have served as a TA for numerical simulation and quantum mechanics.</p>
+
+          <h3>Research focus</h3>
+          <p>Large-scale structure, galaxy clustering, N-body simulations, and topological data analysis in cosmology; SMBHs, 21 cm cosmology, and the epoch of reionization; plus statistical physics and stochastic processes when they sharpen the toolkit.</p>
+
+          <h3>What I build</h3>
+          <p>End-to-end data and computer-vision systems that move from prototype to production: data modeling, feature engineering, training and evaluation, and deployment on real data streams. Tooling: Python scientific stack, PyTorch, OpenCV, SQL, Linux, Git.</p>
+
+          <h3>Teaching and outreach</h3>
+          <p>Tutor and instructor for Python, data analysis, and scientific computing; TA for fundamentals of numerical simulation; talks and defenses on persistent homology of the cosmic web.</p>
+
+          <h3>Around the lab</h3>
+          <p>I am also a photographer with documented work and an award in student theater, and I have a long history of physics outreach and astronomy activities. I play guitar, sing, run, practice yoga, and read widely in literature, music, psychology, mindfulness, travel, and philosophy.</p>
+
+          <h3>How I work</h3>
+          <p>Direct, curious, and results-driven. I care about clear problem statements, auditable pipelines, and code that another person can actually run. My long-term goal is simple: do serious cosmology and build solid, usable data systems.</p>
+
+          <h3>The honest closer</h3>
+          <p>I am multipotential and highly creative. I do not claim depth in every domain outside cosmology and programming, but I bring strong pattern recognition, fast learning, and careful taste across them. That range is an asset, not a distraction. It feeds original ideas and better problem solving, and I use it in service of the work that matters most to me.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="w3-third w3-center">
+
+        <figure class="about-photo">
+          <img src="me4.jpg" alt="Samira Aslani" class="about-me-image" />
+          <figcaption class="about-caption">Campus day — SBU</figcaption>
+        </figure>
+
+        <figure class="about-photo">
+          <img src="image/me_C.JPG" alt="Samira Aslani" class="about-me-image" />
+          <figcaption class="about-caption">
+            <a href="https://ccg.sbu.ac.ir/isrd/1498/" target="_blank" rel="noopener">Intensive Scientific Report Day</a>
+          </figcaption>
+        </figure>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Quote Band -->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+  <h1 class="w3-margin w3-xlarge">“Innocent light-minded men, who think that astronomy can be learnt by looking at the stars without knowledge of mathematics will, in the next life, be birds”</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.linkedin.com/in/samira-aslani/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.researchgate.net/profile/Samira-Aslani-4?ev=hdr_xprf"><i class="fa-brands fa-researchgate"></i></a>
+    <a href="http://last.fm/user/artmisamildk/"><i class="fab fa-lastfm"></i></a>
+    <h6><a href="mailto:samiraaslani1998@gmail.com">Email Me</a></h6>
+  </div>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>
