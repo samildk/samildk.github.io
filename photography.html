@@ -50,6 +50,20 @@ section h2 {
   margin-bottom: 1rem;
   text-align: left;
 }
+
+
+.hero {
+  height: 400px;                /* choose the header height you want */
+  background-image: url('image/nature/nature.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;                /* enable flexbox */
+  align-items: center;          /* vertical centering */
+  justify-content: center;      /* horizontal centering */
+  position: relative;
+  text-align: center;           /* fallback for inline content */
+}
+
 </style>
 </head>
 <body>
@@ -76,8 +90,8 @@ section h2 {
   </div>
 </div>
 
-<header class="w3-container w3-center" style="padding:128px 16px; background-image: url('image/nature/nature11.jpg')">
-  <h1 class="w3-margin w3-jumbo" style="color: white;">Photography</h1>
+<header class="hero">
+  <h1 class="w3-margin w3-jumbo" style="color: black;">Photography</h1>
 </header>
 
 <section>
