@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hobbies- Samira Aslani</title>
+  <title>Research - Samira Aslani</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,47 +10,119 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
   <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.masonry {
-  columns: 3 400px;
-  column-gap: 0.3rem;
-}
-.masonry-item {
-  position: relative;
-  break-inside: avoid;
-  margin-bottom: 1rem;
-}
-.masonry-item img {
-  width: 100%;
-  display: block;
-  border-radius: 0px;
-}
-.masonry-item figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem;
-  font-size: 0.85rem;
-  color: #fff;
-  background: rgba(0,0,0,0.6);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.masonry-item:hover figcaption {
-  opacity: 1;
-}
-section {
-  margin: 2rem auto;
-  max-width: 1500px;
-  padding: 0 1rem;
-}
-section h2 {
-  margin-bottom: 1rem;
-  text-align: left;
-}
-</style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+    /* Masonry (if you use it elsewhere) */
+    .masonry {
+      columns: 3 400px;
+      column-gap: 0.3rem;
+    }
+    .masonry-item {
+      position: relative;
+      break-inside: avoid;
+      margin-bottom: 1rem;
+    }
+    .masonry-item img {
+      width: 100%;
+      display: block;
+      border-radius: 0;
+    }
+    .masonry-item figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 0.85rem;
+      color: #fff;
+      background: rgba(0,0,0,0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .masonry-item:hover figcaption {
+      opacity: 1;
+    }
+
+    /* Generic section container */
+    section {
+      margin: 2rem auto;
+      max-width: 1500px;
+      padding: 0 1rem;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    /* Research layout */
+    .research-wrapper {
+      max-width: 1500px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem 1rem;
+    }
+    .research-section {
+      margin-bottom: 2rem;
+    }
+    .research-section h2 {
+      margin-bottom: 0.5rem;
+    }
+    .research-section h3 {
+      margin-top: 0;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #555;
+    }
+    .research-section p {
+      text-align: justify;
+    }
+    .research-links {
+      margin-top: 0.75rem;
+    }
+    .research-links a {
+      display: inline-block;
+      margin-right: 0.75rem;
+    }
+
+    .research-images img {
+      width: 100%;
+      display: block;
+    }
+
+    /* Side slider */
+    .side-slider {
+      margin-top: 1rem;
+    }
+    .slider {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+    }
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+    .slide-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+      color: #fff;
+      background: rgba(0,0,0,0.6);
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 992px) {
+      .research-wrapper {
+        padding-top: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -72,16 +144,147 @@ section h2 {
     <a href="https://github.com/samildk" class="w3-bar-item w3-button w3-padding-large">GitHub</a>
     <a href="photography.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Photography</a>
     <a href="Research.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Research</a>
-        <a href="Programming.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Programming</a>
-    <a href="Hobbies.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Hobbies</a>
+    <a href="Programming.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Programming</a>
+    <a href="Hobbies.html" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Hobbies</a>
   </div>
 </div>
-<header class="w3-container w3-center" style="padding:128px 16px; background-image: url('image/jwst.jpg')">
+
+<header class="w3-container w3-center" style="padding:128px 16px; background-image: url('image/jwst.jpg'); background-size: cover; background-position: center;">
   <h1 class="w3-margin w3-jumbo" style="color: white;">Research</h1>
   <p class="w3-xlarge" style="color: white;">Samira Aslani</p>
 </header>
 
+<!-- Main content: research sections + side slider -->
+<div class="research-wrapper">
+  <div class="w3-row-padding">
 
+    <!-- Left column: research sections -->
+    <div class="w3-col l8 m12 s12">
+
+      <!-- Head 1 -->
+      <div class="w3-card w3-white w3-padding research-section">
+        <h2>Persistent Homology of the Cosmic Web</h2>
+        <h3>Master Thesis | Prof. S. M. S. Movahed</h3>
+              <a href="https://github.com/samildk/Persistent-Homology-of-Cosmic-Web"
+        target="_blank"
+        style="text-decoration:none;">
+
+        <div style="display:inline-flex; align-items:center;
+                    padding:6px 14px;
+                    font-size:14px;
+                    border:1px solid #ccc;
+                    border-radius:6px;
+                    color:#333;
+                    background:#f8f8f8;
+                    transition:0.2s;">
+          <i class="fa fa-github" style="font-size:18px; margin-right:8px;"></i>
+          <span>View on GitHub</span>
+        </div>
+
+      </a>
+        <p>
+          Study of large scale cosmology can provide information about the initial conditions and evolution of the universe. In the linear regime, the power spectrum can generally establish a meaningful relationship between observation and theory, and thus provide constraints on the free parameters of the model. However, with the entry into the non-linear regime and small scales
+          k &gtrsim; 0.1 Mpc h<sup>-1</sup>, due to non-linear effects, numerous degeneracies are created for parameters such as &sigma;<sub>8</sub>, n<sub>s</sub>, and &Omega;<sub>m</sub>. On the other hand, the power spectrum in such regimes is mostly insensitive and the use of alternative tools is preferred.
+        </p>
+        <p>
+          In this research, we investigate the evolution of the cosmic web using the persistent homology approach. We follow the dependency of the Betti curves, persistence diagrams, and persistence entropy of cosmic structures to high redshifts. The zeroth, first, and second homology groups represent clusters, filaments, and voids, respectively. The persistence of homology groups by performing upper-level filtration at different redshifts can show the footprint of the hierarchical evolution of the cosmic web.
+        </p>
+        <p>
+          In this research, we use the Quijote and Concept N-body simulations to investigate the dark matter density contrast. For this purpose, we use simulations based on the LambdaCDM model with minor changes in parameters such as (&sigma;<sub>8</sub>, &omega;) at different redshifts, which are in a box of size L ~ 1 Gpc h<sup>-1</sup> and contain N = (512)<sup>3</sup> particles.
+        </p>
+        <p>
+          Persistence entropy diagrams are a new measure in which we can show that at different redshifts, the ratio of prior results has a lower percentage error. Our results show that &beta;<sub>0</sub> and &beta;<sub>2</sub> are strongly affected by the change in redshift, while &beta;<sub>1</sub> receives the least effect. Persistence entropy shows that the evolution of filaments is more dependent on redshift than voids and clusters. On the other hand, voids are more sensitive to constrain &sigma;<sub>8</sub> and clusters are more sensitive to constrain &omega;<sub>m</sub>, and this sensitivity is also preserved in z &gtrsim; 0.
+        </p>
+
+
+
+
+        <!-- Image placeholders for this project -->
+      <div class="w3-row-padding research-images">
+
+        <div class="w3-col s12 w3-margin-bottom">
+          <img src="Research/Betti.png" alt="Betti curves z=0 to z=3" style="width:100%;">
+        </div>
+
+        <div class="w3-col s12 w3-margin-bottom">
+          <img src="Research/pd.gif" alt="Persistence diagrams evolution" style="width:100%;">
+        </div>
+
+        <div class="w3-col s12 w3-margin-bottom">
+          <img src="Research/entropy.png" alt="Persistence entropy" style="width:100%;">
+        </div>
+
+      </div>
+
+      </div>
+
+
+      <!-- Head 2 -->
+      <div class="w3-card w3-white w3-padding research-section">
+        <h2>Dynamical Evolution of the AGN Central SMBHs Using Kramers-Moyal Expansion</h2>
+        <h3> Reseach Assitant Project | Dr. Javad Taghizadeh Firuzjaee </h3>
+        <p>
+          One of the main problems concerning quasars involves their central supermassive black holes (SMBHs). The explanation for the formation of these SMBHs remains unknown, and several ideas have been presented to explain them. However, the community has yet to accept a comprehensive explanation. Only one thing is certain: these black holes were not formed by the collapse of giant stars or the accumulation of matter surrounding them.
+        </p>
+        <p>
+          Furthermore, another crucial topic concerns the mass distribution of these black holes over time. In our previous work, we approximated the mass of quasars central supermassive black holes over time using QusarNET datasets and Long Short Term Memory (LSTM). This work is based on data reported from redshifts 3 to 7.1. We utilized this model to reconstruct SMBHs data. As a result, we used the histogram approach to determine the constants of the Kramers-Moyal expansion. This method is a more efficient strategy for determining the dynamic evolution of SMBHs.
+        </p>
+        <div class="research-links">
+          <!-- Replace conference_certificate.pdf with the real file name in the same folder -->
+          <a href="conference_certificate.pdf" target="_blank" class="w3-button w3-small w3-grey w3-round-large">
+            Conference certificate (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- Head 3 -->
+      <div class="w3-card w3-white w3-padding research-section">
+        <h2>Philosophy Of Newtonian Mechanics To Special Relativity</h2>
+        <h3>Bachelor Thesis | Dr. Hossein Shojaee</h3>
+
+        <p>
+          A conceptual exploration of how philosophical interpretations of space, time, and causality evolved from Newtonian mechanics to Einsteinian special relativity, and how these shifts influenced modern views of determinism, locality, and the nature of physical laws.
+        </p>
+        <div class="research-links">
+          <!-- Replace newton_to_sr.pdf with the real file name in the same folder -->
+          <a href="newton_to_sr.pdf" target="_blank" class="w3-button w3-small w3-grey w3-round-large">
+            Read the full essay (PDF)
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right column: side slider -->
+    <div class="w3-col l4 m12 s12">
+      <div class="w3-card w3-white w3-padding side-slider">
+        <h3 class="w3-center" style="margin-top:0;">Gallery</h3>
+        <div class="slider">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <!-- Replace slide1.jpg and caption text -->
+            <img src="Research/R2.jpeg" alt="Cosmic web visualization">
+            <div class="slide-caption">Cosmic web structure from N-body simulations.</div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <!-- Replace slide2.jpg and caption text -->
+            <img src="Research/R1.jpeg" alt="Persistence diagram">
+            <div class="slide-caption">Persistence diagram highlighting filament evolution.</div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <!-- Replace slide3.jpg and caption text -->
+            <img src="Research/R4.jpeg" alt="AGN and SMBH schematic">
+            <div class="slide-caption">Schematic view of an AGN with a central SMBH.</div>
+          </div>
+          <!-- Add more slides if you want, same structure -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <script>
 function myFunction() {
@@ -92,9 +295,27 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+/* Simple auto slider */
+var slideIndex = 0;
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (!slides || slides.length === 0) {
+    return;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000); // change image every 4 seconds
+}
+showSlides();
 </script>
-
-
 
 </body>
 </html>
