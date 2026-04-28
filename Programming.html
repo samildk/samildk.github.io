@@ -139,57 +139,82 @@ section h2 {
 
 <section id="project1-details">
 
-  Project Title: Data Analysis and Customer Segmentation for E-commerce Project Overview: This project is a comprehensive analysis of e-commerce transaction data, focusing on user behavior, product interactions, and customer segmentation. It was part of my collaboration with DigiNext to analyze large datasets and derive actionable insights for improving customer engagement, sales strategies, and product recommendations.
+  <h2>Project Title</h2>
+  <p>Data Analysis and Customer Segmentation for E-commerce</p>
 
-  Project Breakdown:
-  Data Cleaning and Preparation:
-  Objective: Clean and preprocess raw transaction data.
-  Steps:
-  Handled missing and duplicate data.
-  Removed negative values in transaction quantity and ensured consistency.
-  Converted timestamps to appropriate formats for easier analysis.
+  <h2>Project Overview</h2>
+  <p>
+    This project is a comprehensive analysis of e-commerce transaction data, focusing on user behavior, product interactions, and customer segmentation. It was part of my collaboration with DigiNext to analyze large datasets and derive actionable insights for improving customer engagement, sales strategies, and product recommendations.
+  </p>
 
-  Feature Engineering:
-  Objective: Extract meaningful features from transaction data.
-  Key Features:
-  Extracted time features from the InvoiceDate column, such as hour, day of week, day of month, and week.
-  Calculated the event score based on event types like purchase, view, and cart.
+  <h2>Project Breakdown</h2>
 
-  Exploratory Data Analysis (EDA):
-  Objective: Gain a deeper understanding of the data and identify key trends.
-  Findings:
-  Customer Purchase Trends: Analyzed the number of transactions and revenue trends by day, week, and month using bar plots and time-series analysis.
-  Product Insights: Visualized product popularity by category, price distribution, and customer interest.
-  Customer Segmentation: Grouped customers based on their total purchase amount and quantity using K-Means clustering, identifying four distinct clusters.
+  <h3>Data Cleaning and Preparation</h3>
+  <p><strong>Objective:</strong> Clean and preprocess raw transaction data.</p>
+  <p><strong>Steps:</strong></p>
+  <ul>
+    <li>Handled missing and duplicate data.</li>
+    <li>Removed negative values in transaction quantity and ensured consistency.</li>
+    <li>Converted timestamps to appropriate formats for easier analysis.</li>
+  </ul>
 
-  Statistical Analysis & A/B Testing:
-  Objective: Test hypotheses related to group performance (Group A vs. Group B).
-  Hypothesis: Investigated whether there is a significant difference in the average purchase amounts between two groups of users.
-  Method: Conducted a t-test to compare the means of the two groups, with results showing no significant difference in the average purchase amount.
+  <h3>Feature Engineering</h3>
+  <p><strong>Objective:</strong> Extract meaningful features from transaction data.</p>
+  <p><strong>Key Features:</strong></p>
+  <ul>
+    <li>Extracted time features from the InvoiceDate column, such as hour, day of week, day of month, and week.</li>
+    <li>Calculated the event score based on event types like purchase, view, and cart.</li>
+  </ul>
 
-  Customer Segmentation:
-  Objective: Cluster customers based on their purchasing behavior to identify high-value customers.
-  Method: Used K-Means clustering to segment customers into four clusters based on total purchase amounts and quantities purchased.
-  Outcome: Identified clusters with very high purchase amounts (Cluster 2) and clusters with smaller, less frequent purchases (Cluster 0).
+  <h3>Exploratory Data Analysis (EDA)</h3>
+  <p><strong>Objective:</strong> Gain a deeper understanding of the data and identify key trends.</p>
+  <p><strong>Findings:</strong></p>
+  <ul>
+    <li><strong>Customer Purchase Trends:</strong> Analyzed the number of transactions and revenue trends by day, week, and month using bar plots and time-series analysis.</li>
+    <li><strong>Product Insights:</strong> Visualized product popularity by category, price distribution, and customer interest.</li>
+    <li><strong>Customer Segmentation:</strong> Grouped customers based on their total purchase amount and quantity using K-Means clustering, identifying four distinct clusters.</li>
+  </ul>
 
-  Key Insights & Impact:
-  Customer Behavior: The analysis revealed clear differences in purchase behavior across users. High-value customers were identified, with their purchasing patterns being leveraged for targeted marketing.
-  Revenue Growth Opportunities: By segmenting customers, I helped identify strategies to boost conversions and target high-value customers more effectively.
-  Improved Product Recommendations: Insights from customer interactions with products enabled more targeted product recommendations, increasing user engagement.
-  Efficient Resource Allocation: Understanding time-of-day trends allowed the business to optimize staffing, promotions, and inventory management.
+  <h3>Statistical Analysis & A/B Testing</h3>
+  <p><strong>Objective:</strong> Test hypotheses related to group performance (Group A vs. Group B).</p>
+  <p><strong>Hypothesis:</strong> Investigated whether there is a significant difference in the average purchase amounts between two groups of users.</p>
+  <p><strong>Method:</strong> Conducted a t-test to compare the means of the two groups, with results showing no significant difference in the average purchase amount.</p>
 
-  Technologies Used:
-  Python (Pandas, NumPy, Matplotlib, Seaborn)
-  Data Cleaning & Transformation: Pandas, NumPy
-  Statistical Analysis: T-test (SciPy)
-  Clustering: K-Means (Scikit-learn)
-  Visualization: Matplotlib, Seaborn
+  <h3>Customer Segmentation</h3>
+  <p><strong>Objective:</strong> Cluster customers based on their purchasing behavior to identify high-value customers.</p>
+  <p><strong>Method:</strong> Used K-Means clustering to segment customers into four clusters based on total purchase amounts and quantities purchased.</p>
+  <p><strong>Outcome:</strong> Identified clusters with very high purchase amounts (Cluster 2) and clusters with smaller, less frequent purchases (Cluster 0).</p>
 
-  Links to the Project:
-  GitHub Repository (Include GitHub link to the repository with the code and data)
-  Demo / Visualization (If applicable, include a link to an interactive dashboard or a demo)
+  <h2>Key Insights & Impact</h2>
+  <ul>
+    <li><strong>Customer Behavior:</strong> The analysis revealed clear differences in purchase behavior across users. High-value customers were identified, with their purchasing patterns being leveraged for targeted marketing.</li>
+    <li><strong>Revenue Growth Opportunities:</strong> By segmenting customers, I helped identify strategies to boost conversions and target high-value customers more effectively.</li>
+    <li><strong>Improved Product Recommendations:</strong> Insights from customer interactions with products enabled more targeted product recommendations, increasing user engagement.</li>
+    <li><strong>Efficient Resource Allocation:</strong> Understanding time-of-day trends allowed the business to optimize staffing, promotions, and inventory management.</li>
+  </ul>
 
-  This project showcases my ability to clean, analyze, and extract insights from large datasets, as well as apply advanced statistical techniques and machine learning models to derive actionable insights for business strategy. It's a strong demonstration of my data analysis capabilities and the ability to work with business stakeholders to deliver data-driven results.
+  <!-- Gray Box: Technologies -->
+  <div style="background:#f1f1f1; padding:15px; margin-top:20px; border-radius:8px;">
+    <h3>Technologies Used</h3>
+    <p>Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
+    <p>Data Cleaning & Transformation: Pandas, NumPy</p>
+    <p>Statistical Analysis: T-test (SciPy)</p>
+    <p>Clustering: K-Means (Scikit-learn)</p>
+    <p>Visualization: Matplotlib, Seaborn</p>
+  </div>
+
+  <!-- Gray Box: Links -->
+  <div style="background:#f1f1f1; padding:15px; margin-top:20px; border-radius:8px; text-align:center;">
+    <h3>Links to the Project</h3>
+    <a href="https://github.com/samildk" class="w3-button w3-dark-grey">GitHub Repository</a>
+    <br><br>
+    <p>Demo / Visualization</p>
+    <p>(If applicable, include a link to an interactive dashboard or a demo)</p>
+  </div>
+
+  <p style="margin-top:20px;">
+    This project showcases my ability to clean, analyze, and extract insights from large datasets, as well as apply advanced statistical techniques and machine learning models to derive actionable insights for business strategy. It's a strong demonstration of my data analysis capabilities and the ability to work with business stakeholders to deliver data-driven results.
+  </p>
 
 </section>
 
