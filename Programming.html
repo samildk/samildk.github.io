@@ -12,6 +12,7 @@
   <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
 .masonry {
   columns: 3 400px;
   column-gap: 0.3rem;
@@ -42,10 +43,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .masonry-item:hover figcaption {
   opacity: 1;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 section {
+  
   margin: 2rem auto;
   max-width: 1500px;
   padding: 0 1rem;
+  scroll-margin-top: 100px;
 }
 
 section h2 {
@@ -130,7 +137,61 @@ section h2 {
   </div>
 </section>
 
+<section id="project1-details">
 
+  Project Title: Data Analysis and Customer Segmentation for E-commerce Project Overview: This project is a comprehensive analysis of e-commerce transaction data, focusing on user behavior, product interactions, and customer segmentation. It was part of my collaboration with DigiNext to analyze large datasets and derive actionable insights for improving customer engagement, sales strategies, and product recommendations.
+
+  Project Breakdown:
+  Data Cleaning and Preparation:
+  Objective: Clean and preprocess raw transaction data.
+  Steps:
+  Handled missing and duplicate data.
+  Removed negative values in transaction quantity and ensured consistency.
+  Converted timestamps to appropriate formats for easier analysis.
+
+  Feature Engineering:
+  Objective: Extract meaningful features from transaction data.
+  Key Features:
+  Extracted time features from the InvoiceDate column, such as hour, day of week, day of month, and week.
+  Calculated the event score based on event types like purchase, view, and cart.
+
+  Exploratory Data Analysis (EDA):
+  Objective: Gain a deeper understanding of the data and identify key trends.
+  Findings:
+  Customer Purchase Trends: Analyzed the number of transactions and revenue trends by day, week, and month using bar plots and time-series analysis.
+  Product Insights: Visualized product popularity by category, price distribution, and customer interest.
+  Customer Segmentation: Grouped customers based on their total purchase amount and quantity using K-Means clustering, identifying four distinct clusters.
+
+  Statistical Analysis & A/B Testing:
+  Objective: Test hypotheses related to group performance (Group A vs. Group B).
+  Hypothesis: Investigated whether there is a significant difference in the average purchase amounts between two groups of users.
+  Method: Conducted a t-test to compare the means of the two groups, with results showing no significant difference in the average purchase amount.
+
+  Customer Segmentation:
+  Objective: Cluster customers based on their purchasing behavior to identify high-value customers.
+  Method: Used K-Means clustering to segment customers into four clusters based on total purchase amounts and quantities purchased.
+  Outcome: Identified clusters with very high purchase amounts (Cluster 2) and clusters with smaller, less frequent purchases (Cluster 0).
+
+  Key Insights & Impact:
+  Customer Behavior: The analysis revealed clear differences in purchase behavior across users. High-value customers were identified, with their purchasing patterns being leveraged for targeted marketing.
+  Revenue Growth Opportunities: By segmenting customers, I helped identify strategies to boost conversions and target high-value customers more effectively.
+  Improved Product Recommendations: Insights from customer interactions with products enabled more targeted product recommendations, increasing user engagement.
+  Efficient Resource Allocation: Understanding time-of-day trends allowed the business to optimize staffing, promotions, and inventory management.
+
+  Technologies Used:
+  Python (Pandas, NumPy, Matplotlib, Seaborn)
+  Data Cleaning & Transformation: Pandas, NumPy
+  Statistical Analysis: T-test (SciPy)
+  Clustering: K-Means (Scikit-learn)
+  Visualization: Matplotlib, Seaborn
+
+  Links to the Project:
+  GitHub Repository (Include GitHub link to the repository with the code and data)
+  Demo / Visualization (If applicable, include a link to an interactive dashboard or a demo)
+
+  This project showcases my ability to clean, analyze, and extract insights from large datasets, as well as apply advanced statistical techniques and machine learning models to derive actionable insights for business strategy. It's a strong demonstration of my data analysis capabilities and the ability to work with business stakeholders to deliver data-driven results.
+
+</section>
 
   
 <section>
