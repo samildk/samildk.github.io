@@ -26,6 +26,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   display: block;
   border-radius: 0px;
 }
+    
+.section-p {
+  margin-bottom: 20px;
+}
+    
 .masonry-item figcaption {
   position: absolute;
   bottom: 0;
@@ -46,6 +51,7 @@ section {
   max-width: 1500px;
   padding: 0 1rem;
 }
+
 section h2 {
   margin-bottom: 1rem;
   text-align: left;
@@ -98,7 +104,10 @@ section h2 {
     <!-- Project 1 -->
     <div class="masonry-item">
       <figure>
-        <img src="project1.png" alt="Project 1 Image">
+        <a href="#project1-details">
+          <img src="project1.jpg" alt="Project 1 Image">
+        </a>
+
         <figcaption>
           <h3>Data Analysis & Customer Segmentation for E-commerce</h3>
           <p>Click image to view full project details.</p>
@@ -125,7 +134,93 @@ section h2 {
   </div>
 </section>
 
+<section id="project1-details">
+  <!-- your full project 1 text goes here -->
+</section> 
 
+<div class="section-p">
+  <p>Project Title: Data Analysis and Customer Segmentation for E-commerce</p>
+</div>
+
+<div class="section-p">
+  <p>Project Overview: This project is a comprehensive analysis of e-commerce transaction data, focusing on user behavior, product interactions, and customer segmentation. It was part of my collaboration with DigiNext to analyze large datasets and derive actionable insights for improving customer engagement, sales strategies, and product recommendations.</p>
+</div>
+
+<div class="section-p">
+  <p>Project Breakdown:</p>
+</div>
+
+<div class="section-p">
+  <p>Data Cleaning and Preparation:</p>
+  <p>Objective: Clean and preprocess raw transaction data.</p>
+  <p>Steps:</p>
+  <p>Handled missing and duplicate data.</p>
+  <p>Removed negative values in transaction quantity and ensured consistency.</p>
+  <p>Converted timestamps to appropriate formats for easier analysis.</p>
+</div>
+
+<div class="section-p">
+  <p>Feature Engineering:</p>
+  <p>Objective: Extract meaningful features from transaction data.</p>
+  <p>Key Features:</p>
+  <p>Extracted time features from the InvoiceDate column, such as hour, day of week, day of month, and week.</p>
+  <p>Calculated the event score based on event types like purchase, view, and cart.</p>
+</div>
+
+<div class="section-p">
+  <p>Exploratory Data Analysis (EDA):</p>
+  <p>Objective: Gain a deeper understanding of the data and identify key trends.</p>
+  <p>Findings:</p>
+  <p>Customer Purchase Trends: Analyzed the number of transactions and revenue trends by day, week, and month using bar plots and time-series analysis.</p>
+  <p>Product Insights: Visualized product popularity by category, price distribution, and customer interest.</p>
+  <p>Customer Segmentation: Grouped customers based on their total purchase amount and quantity using K-Means clustering, identifying four distinct clusters.</p>
+</div>
+
+<div class="section-p">
+  <p>Statistical Analysis & A/B Testing:</p>
+  <p>Objective: Test hypotheses related to group performance (Group A vs. Group B).</p>
+  <p>Hypothesis: Investigated whether there is a significant difference in the average purchase amounts between two groups of users.</p>
+  <p>Method: Conducted a t-test to compare the means of the two groups, with results showing no significant difference in the average purchase amount.</p>
+</div>
+
+<div class="section-p">
+  <p>Customer Segmentation:</p>
+  <p>Objective: Cluster customers based on their purchasing behavior to identify high-value customers.</p>
+  <p>Method: Used K-Means clustering to segment customers into four clusters based on total purchase amounts and quantities purchased.</p>
+  <p>Outcome: Identified clusters with very high purchase amounts (Cluster 2) and clusters with smaller, less frequent purchases (Cluster 0).</p>
+</div>
+
+<div class="section-p">
+  <p>Key Insights & Impact:</p>
+  <p>Customer Behavior: The analysis revealed clear differences in purchase behavior across users. High-value customers were identified, with their purchasing patterns being leveraged for targeted marketing.</p>
+  <p>Revenue Growth Opportunities: By segmenting customers, I helped identify strategies to boost conversions and target high-value customers more effectively.</p>
+  <p>Improved Product Recommendations: Insights from customer interactions with products enabled more targeted product recommendations, increasing user engagement.</p>
+  <p>Efficient Resource Allocation: Understanding time-of-day trends allowed the business to optimize staffing, promotions, and inventory management.</p>
+</div>
+
+<div class="section-p">
+  <p>Technologies Used:</p>
+  <p>Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
+  <p>Data Cleaning & Transformation: Pandas, NumPy</p>
+  <p>Statistical Analysis: T-test (SciPy)</p>
+  <p>Clustering: K-Means (Scikit-learn)</p>
+  <p>Visualization: Matplotlib, Seaborn</p>
+</div>
+
+<div class="section-p">
+  <p>Links to the Project:</p>
+  <p>GitHub Repository</p>
+  <p>(Include GitHub link to the repository with the code and data)</p>
+  <p>Demo / Visualization</p>
+  <p>(If applicable, include a link to an interactive dashboard or a demo)</p>
+</div>
+
+<div class="section-p">
+  <p>This project showcases my ability to clean, analyze, and extract insights from large datasets, as well as apply advanced statistical techniques and machine learning models to derive actionable insights for business strategy. It's a strong demonstration of my data analysis capabilities and the ability to work with business stakeholders to deliver data-driven results.</p>
+</div>
+
+
+  
 <section>
   <h2>Skills & Technologies</h2>
   <p>Here are some of the tools and technologies I've worked with:</p>
