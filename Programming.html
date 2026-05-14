@@ -108,7 +108,7 @@ section h2 {
     <div class="masonry-item">
       <figure>
         <a href="#project1-details">
-          <img src="project1.png" alt="Project 1 Image">
+          <img src="image/project1.png" alt="Project 1 Image">
         </a>
 
         <figcaption>
@@ -136,12 +136,79 @@ section h2 {
       </figure>
     </div>
 
+    <div class="masonry-item">
+      <figure>
+        <a href="#project3-details">
+          <img src="image/teaser" alt="Project 3 Image">
+        </a>
+        
+        <figcaption>
+          <h3>Automated Video Keyframe Extraction and Multimodal Tizer Categorization</h3>
+       
+          <p><strong>Tech Used:</strong> FFmpeg |  multiprocessing | SQLAlchemy(ORM) | PostgreSQL | Soft histogram smoothing | Bhattacharyya distance | entropy calculation </p>
+      
+        </figcaption>
+      </figure>
+    </div>
+
     <!-- More projects can be added similarly -->
   </div>
 </section>
 
+  <section id ="project3-details">
+  <img src="image/teaser.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
+
+  <h2>Automated Video Keyframe Extraction and Multimodal Tizer Categorization</h2>
+
+  <p>
+    I developed a high-performance system for automated video analysis and categorization, designed to extract, process, 
+    and match video keyframes for large-scale advertising assets, known internally as <strong>tizers</strong>. 
+    The project transforms raw video streams into structured datasets of keyframes, histograms, and semantic categories 
+    for analytics, duplicate detection, and recommendation systems.
+  </p>
+
+  <h3>Pipeline Overview</h3>
+  <ul>
+    <li><strong>Keyframe Extraction:</strong> Reads video frames using OpenCV or FFmpeg, generates soft-normalized grayscale histograms, compares frames with Bhattacharyya distance, and selects keyframes.</li>
+    <li><strong>Representative Frame Identification:</strong> Finds frames with maximum representative length and highest entropy; supports dual max-frame detection for multiple key segments.</li>
+    <li><strong>Histogram-Based Matching:</strong> Compares keyframes against previously processed tizers to detect duplicates or near-duplicates using histogram similarity metrics.</li>
+    <li><strong>Category Assignment:</strong> Assigns videos to predefined or generated categories using entropy and histogram heuristics; groups related tizers under a “mother tizer.”</li>
+    <li><strong>Database Integration:</strong> Stores keyframes and metadata in PostgreSQL tables (Tbl_TizerHistogram3, Tbl_MatchHist, Tbl_Unique) using SQLAlchemy with batch and transactional operations; supports multiprocessing for parallel processing.</li>
+  </ul>
+
+  <h3>Technical Highlights</h3>
+  <ul>
+    <li>Multimodal Video Processing with representative frames and soft histograms.</li>
+    <li>Duplicate Detection & Matching using histogram comparison and Bhattacharyya distance.</li>
+    <li>Category Mapping & Mother Tizer Assignment for hierarchical organization.</li>
+    <li>Parallel & Scalable Processing via Python multiprocessing.</li>
+    <li>Database-Centric Design with PostgreSQL transactional safety and batch updates.</li>
+    <li>Robust Frame Representation including frame number, start time, length, normalized histogram, and entropy.</li>
+    <li>FFmpeg & OpenCV integration for multi-format and high-resolution video processing.</li>
+  </ul>
+
+  <h3>Impact & Use Case</h3>
+  <ul>
+    <li>Automates creation of structured keyframe datasets from hundreds of hours of video content.</li>
+    <li>Enables robust duplicate detection, similarity ranking, and content categorization.</li>
+    <li>Supports hierarchical content mapping for analytics, reporting, and recommendations.</li>
+    <li>Handles large-scale operations with fault-tolerant parallel processing and transactional database safety.</li>
+  </ul>
+
+  <h3>Technologies Used</h3>
+  <ul>
+    <li><strong>Programming & Libraries:</strong> Python, OpenCV, NumPy, PIL, SciPy, subprocess</li>
+    <li><strong>Database & ORM:</strong> PostgreSQL, SQLAlchemy</li>
+    <li><strong>Video Tools:</strong> FFmpeg, ffprobe</li>
+    <li><strong>Parallelism & Performance:</strong> Python multiprocessing, concurrent frame processing</li>
+    <li><strong>Algorithms & Metrics:</strong> Soft histogram smoothing, Bhattacharyya distance, entropy calculation, frame-to-frame similarity</li>
+  </ul>
+</section>
+
+  
 
   <section id ="project2-details" >
+  <img src="image/finetune.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
   <h2>Fine-Tuning Qwen2.5-VL for Multimodal Image Similarity Reasoning</h2>
 
   <p>
@@ -187,7 +254,7 @@ section h2 {
 </section>
   
 <section id="project1-details">
-
+  <img src="image/project1.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
   <h2>Data Analysis and Customer Segmentation for E-commerce</h2>
  
 
