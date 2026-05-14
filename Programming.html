@@ -123,12 +123,15 @@ section h2 {
     <!-- Project 2 -->
     <div class="masonry-item">
       <figure>
-        <img src="image/project2.jpg" alt="Project 2 Image">
+        <a href="#project2-details">
+          <img src="image/finetune.png" alt="Project 1 Image">
+        </a>
+        
         <figcaption>
-          <h3>Intelligent Workflow System</h3>
-          <p>An automated workflow system that integrates AI decision-making logic and task automation.</p>
-          <p><strong>Tech Used:</strong> Python, LLMs, RAG, Redis</p>
-          <a href="https://github.com/samildk/project2" class="w3-button w3-white">View on GitHub</a>
+          <h3>Fine-Tuning Qwen2.5-VL for Multimodal Image Similarity Reasoning</h3>
+          <p>Two-Image Multimodal Training | Label Correction Logic</p>
+          <p><strong>Tech Used:</strong> Qwen2.5-VL, Hugging Face Transformers, PEFT, LoRA </p>
+      
         </figcaption>
       </figure>
     </div>
@@ -137,6 +140,52 @@ section h2 {
   </div>
 </section>
 
+
+  <section id ="project2-details" >
+  <h2>Fine-Tuning Qwen2.5-VL for Multimodal Image Similarity Reasoning</h2>
+
+  <p>
+    I built a full supervised fine-tuning pipeline for <strong>Qwen2.5-VL</strong>, an open-source multimodal vision-language model, 
+    to improve its performance on <strong>image-pair reasoning tasks</strong>. The model is trained to analyze two images simultaneously 
+    and answer whether they are visually or semantically the same using a controlled <strong>Yes/No</strong> response.
+  </p>
+
+  <p>
+    This project focuses on adapting a large vision-language foundation model for a specialized real-world task: binary visual similarity judgment. 
+    I designed the system to process paired image inputs, apply Qwen’s multimodal chat formatting, correct noisy labels, 
+    and train the model using efficient fine-tuning techniques.
+  </p>
+
+  <p>
+    To make fine-tuning practical and scalable, I used <strong>LoRA adapters</strong> with <strong>4-bit quantization</strong>, 
+    allowing the model to be adapted efficiently without updating all base model parameters. 
+    I also implemented a custom weighted loss function to emphasize difficult or incorrectly answered examples, 
+    helping the model learn from its previous mistakes while preserving correct behavior on reliable samples.
+  </p>
+
+  <h3>Key Features</h3>
+  <ul>
+    <li><strong>Two-Image Multimodal Training:</strong> Model receives two images in the same prompt and learns to compare them directly.</li>
+    <li><strong>Custom Dataset Pipeline:</strong> Reads JSONL examples, validates image-pair structure, loads images, cleans prompts, prepares multimodal tensors, and masks labels.</li>
+    <li><strong>Label Correction Logic:</strong> Automatically flips Yes/No answers for incorrect examples to provide corrected supervision.</li>
+    <li><strong>Weighted Loss for Hard Examples:</strong> Emphasizes incorrect examples to help the model learn from mistakes.</li>
+    <li><strong>Efficient Fine-Tuning:</strong> Uses LoRA and 4-bit quantization to reduce GPU memory usage and adapt efficiently.</li>
+    <li><strong>Baseline and Post-Training Evaluation:</strong> Measures generation accuracy before and after fine-tuning for measurable improvements.</li>
+    <li><strong>Diagnostic Evaluation Modes:</strong> Separately measures correction of wrong examples and preservation of correct answers.</li>
+    <li><strong>Inference and Batch Prediction:</strong> Supports single image-pair prediction and batch prediction from CSV/JSONL files.</li>
+  </ul>
+
+  <h3>Technologies Used</h3>
+  <ul>
+    <li>Models and AI Frameworks: Qwen2.5-VL, Hugging Face Transformers, PEFT, LoRA, BitsAndBytes</li>
+    <li>Deep Learning: PyTorch, causal language modeling, custom loss functions, gradient accumulation</li>
+    <li>Multimodal Processing: PIL, Qwen VL utilities, two-image prompt construction</li>
+    <li>Training Optimization: 4-bit quantization, NF4, paged AdamW 8-bit, cosine scheduler, early stopping</li>
+    <li>Evaluation: validation accuracy, label-specific diagnostics, deterministic generation, Yes/No constrained decoding</li>
+    <li>Data Formats: JSONL, CSV, image-pair datasets</li>
+  </ul>
+</section>
+  
 <section id="project1-details">
 
   <h2>Data Analysis and Customer Segmentation for E-commerce</h2>
