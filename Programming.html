@@ -178,9 +178,26 @@ section h2 {
         </a>
         
         <figcaption>
-          <h3>Advanced Image Clustering & Sub-Clustering System</h3>
+          <h3>Human-in-the-Loop Pair Verification System</h3>
        
           <p><strong>Tech Used:</strong>AI Verification Agent via Flask API  |  Relational Database | Milvus (Vector Database & Similarity Search) | OpenCV & FFmpeg (Computer Vision & Video Processing) </p>
+      
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Project 6 -->
+
+    <div class="masonry-item">
+      <figure>
+        <a href="#project6-details">
+          <img src="image/apps.png" alt="Project 6 Image">
+        </a>
+        
+        <figcaption>
+          <h3>Advanced Image Clustering & Sub-Clustering System</h3>
+       
+          <p><strong>Tech Used:</strong>Flask API</p>
       
         </figcaption>
       </figure>
@@ -189,8 +206,44 @@ section h2 {
     <!-- More projects can be added similarly -->
   </div>
 </section>
-  <section id ="project5-details">
+
+
+
+  <section id ="project6-details" >
+
+  <h2>Human-in-the-Loop Pair Verification System</h2>
+  <img src="image/apps.png" alt="Human-in-the-Loop Pair Verification Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
+
+  <p>
+    Developed a <strong>human-in-the-loop system</strong> to verify the similarity of image pairs where the AI gave uncertain or false results after Milvus clustering. 
+    This ensures <strong>100% accuracy</strong> in cluster assignments for visually similar or dissimilar images.
+  </p>
+
+  <h3>Workflow Overview</h3>
+  <ul>
+    <li><strong>Flagging AI-Uncertain Pairs:</strong> Identify pairs of images where AI predictions are unreliable.</li>
+    <li><strong>Human Verification Interface:</strong> Present side-by-side comparison for human operators to mark same or different.</li>
+    <li><strong>Final Correction:</strong> Human decision overrides AI result and ensures cluster consistency.</li>
+    <li><strong>Database Update:</strong> Update database with verified results and adjust cluster assignments accordingly.</li>
+  </ul>
+
+  <h3>Technical Highlights</h3>
+  <ul>
+    <li>Human-in-the-loop verification for AI-ambiguous image pairs.</li>
+    <li>Post-clustering review to fix false positives or uncertain similarity results.</li>
+    <li>Flask-based web interface for fast, intuitive human review.</li>
+    <li>Database integration ensures consistency and reliability of clusters.</li>
+    <li>Scalable pipeline supporting large-scale flagged pairs efficiently.</li>
+  </ul>
+
+  <p style="font-size:0.9em; color:gray; margin-top:15px;">
+    <em>Note: Source code is confidential and cannot be publicly shared due to company agreements. 
+    Diagrams and descriptions reflect my contributions.</em>
+  </p>
+</section> 
+
   
+  <section id ="project5-details">
 
   <h2>Advanced Image Clustering & Sub-Clustering System</h2>
   <img src="image/color.png" alt="Image Clustering & Sub-Clustering Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
