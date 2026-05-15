@@ -152,15 +152,74 @@ section h2 {
       </figure>
     </div>
 
+    <!-- Project 4 -->
+
+    <div class="masonry-item">
+      <figure>
+        <a href="#project4-details">
+          <img src="image/Arm.png" alt="Project 4 Image">
+        </a>
+        
+        <figcaption>
+          <h3>End-to-End Automated Multimedia Ad Clustering System</h3>
+       
+          <p><strong>Tech Used:</strong>AI Verification Agent via Flask API  |  Relational Database | Milvus (Vector Database & Similarity Search) | OpenCV & FFmpeg (Computer Vision & Video Processing) </p>
+      
+        </figcaption>
+      </figure>
+    </div>
+    
     <!-- More projects can be added similarly -->
   </div>
 </section>
 
+  <section  id ="project4-details" >
+  
+
+  <h2>End-to-End Automated Multimedia Ad Clustering System</h2>
+  <img src="image/Arm.png" alt="Automated Multimedia Clustering Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
+  <p>
+    I developed a <strong>full end-to-end system</strong> for processing single-image ads and short videos, combining keyframe extraction, histogram-based similarity, Milvus vector database clustering, and AI-driven visual verification. 
+    The system uses a modular Python code design and a <strong>Flask API</strong> to query a fine-tuned Qwen model for high-precision verification.
+  </p>
+
+  <h3>Pipeline Overview</h3>
+  <ul>
+    <li><strong>Video & Image Ingestion:</strong> Efficiently reads new multimedia content and prepares it for analysis.</li>
+    <li><strong>Keyframe Extraction & Noise Handling:</strong> Generates soft histograms, detects duplicates, merges noisy segments, and extracts representative frames.</li>
+    <li><strong>Database Storage & Foldering:</strong> Stores keyframes, histograms, and metadata in PostgreSQL and organizes files in structured folders.</li>
+    <li><strong>Feature Vector Generation:</strong> Converts keyframes into dhash vectors for fast similarity search in Milvus.</li>
+    <li><strong>Milvus-Based Clustering:</strong> Assigns cluster IDs using nearest-neighbor search; dynamically reuses or creates new clusters.</li>
+    <li><strong>Qwen Verification:</strong> Uses Flask API serving a fine-tuned Qwen model to confirm visual similarity before final assignment.</li>
+    <li><strong>Final Cluster Assignment & Update:</strong> Updates database cluster IDs and moves content to organized folders.</li>
+  </ul>
+
+  <h3>Technical Highlights</h3>
+  <ul>
+    <li>Modular Python code structure for ingestion, preprocessing, clustering, and verification.</li>
+    <li>AI verification via fine-tuned Qwen model served through Flask API.</li>
+    <li>Milvus vector search with L2 distance for scalable clustering.</li>
+    <li>Noise handling and edge case management for overlapping or partial videos.</li>
+    <li>Transactional PostgreSQL database integration for reliability.</li>
+    <li>Parallel and scalable pipeline supporting real-time multimedia ingestion.</li>
+  </ul>
+
+  <h3>Impact & Use Case</h3>
+  <ul>
+    <li>Automates clustering and organization of single-image ads and short videos.</li>
+    <li>Detects near-duplicate content with high precision using combined vector and AI verification.</li>
+    <li>Maintains hierarchical cluster structure for analytics and reporting.</li>
+    <li>Handles noisy or partial input and merges frames intelligently.</li>
+    <li>Scalable and modular system ready for large-scale deployments.</li>
+  </ul>
+</section> 
+
+  
   <section id ="project3-details">
-  <img src="image/teazer.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
+ 
 
   <h2>Automated Video Keyframe Extraction and Multimodal Tizer Categorization</h2>
-
+  <img src="image/teazer.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
   <p>
     I developed a high-performance system for automated video analysis and categorization, designed to extract, process, 
     and match video keyframes for large-scale advertising assets, known internally as <strong>tizers</strong>. 
@@ -209,8 +268,9 @@ section h2 {
   
 
   <section id ="project2-details" >
-  <img src="image/finetune.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
+ 
   <h2>Fine-Tuning Qwen2.5-VL for Multimodal Image Similarity Reasoning</h2>
+  <img src="image/finetune.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
 
   <p>
     I built a full supervised fine-tuning pipeline for <strong>Qwen2.5-VL</strong>, an open-source multimodal vision-language model, 
@@ -255,9 +315,9 @@ section h2 {
 </section>
   
 <section id="project1-details">
-  <img src="image/project1.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
+  
   <h2>Data Analysis and Customer Segmentation for E-commerce</h2>
- 
+  <img src="image/project1.png" alt="Automated Video Keyframe Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
 
   <h3>Project Overview</h3>
   <p>
@@ -310,24 +370,22 @@ section h2 {
     <li><strong>Efficient Resource Allocation:</strong> Understanding time-of-day trends allowed the business to optimize staffing, promotions, and inventory management.</li>
   </ul>
 
-  <!-- Gray Box: Technologies -->
-  <div style="background:#f1f1f1; padding:15px; margin-top:20px; border-radius:8px;">
+  
     <h3>Technologies Used</h3>
     <p>Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
     <p>Data Cleaning & Transformation: Pandas, NumPy</p>
     <p>Statistical Analysis: T-test (SciPy)</p>
     <p>Clustering: K-Means (Scikit-learn)</p>
     <p>Visualization: Matplotlib, Seaborn</p>
-  </div>
 
-  <!-- Gray Box: Links -->
-  <div style="background:#f1f1f1; padding:15px; margin-top:20px; border-radius:8px; text-align:center;">
+
+
     <h3>Links to the Project</h3>
     <a href="https://github.com/samildk" class="w3-button w3-dark-grey">GitHub Repository</a>
     <br><br>
     <p>Demo / Visualization</p>
     <p>(If applicable, include a link to an interactive dashboard or a demo)</p>
-  </div>
+
 
   <p style="margin-top:20px;">
     This project showcases my ability to clean, analyze, and extract insights from large datasets, as well as apply advanced statistical techniques and machine learning models to derive actionable insights for business strategy. It's a strong demonstration of my data analysis capabilities and the ability to work with business stakeholders to deliver data-driven results.
