@@ -163,6 +163,23 @@ section h2 {
         <figcaption>
           <h3>End-to-End Automated Multimedia Ad Clustering System</h3>
        
+          <p><strong>Tech Used:</strong> Agglomerative Clustering | PCA | ResNet | Color vector (Innovative Feature for color palette) </p>
+      
+        </figcaption>
+      </figure>
+    </div>
+
+       <!-- Project 5 -->
+
+    <div class="masonry-item">
+      <figure>
+        <a href="#project5-details">
+          <img src="image/color.png" alt="Project 5 Image">
+        </a>
+        
+        <figcaption>
+          <h3>Advanced Image Clustering & Sub-Clustering System</h3>
+       
           <p><strong>Tech Used:</strong>AI Verification Agent via Flask API  |  Relational Database | Milvus (Vector Database & Similarity Search) | OpenCV & FFmpeg (Computer Vision & Video Processing) </p>
       
         </figcaption>
@@ -171,6 +188,47 @@ section h2 {
     
     <!-- More projects can be added similarly -->
   </div>
+</section>
+  <section id ="project5-details">
+  
+
+  <h2>Advanced Image Clustering & Sub-Clustering System</h2>
+  <img src="image/color.png" alt="Image Clustering & Sub-Clustering Workflow" style="width:100%; max-width:900px; margin-bottom:20px;">
+  <p>
+    Developed an <strong>end-to-end pipeline</strong> for clustering single-image ads and short videos, combining deep feature extraction, PCA-based dimensionality reduction, and Agglomerative Clustering for main clusters. 
+    Introduced a <strong>novel color vector method</strong> for fine-grained sub-clustering, enabling highly precise visual grouping.
+  </p>
+
+  <h3>Pipeline Overview</h3>
+  <ul>
+    <li><strong>Image Ingestion & Preprocessing:</strong> Reads incoming images, crops, resizes, and normalizes them for consistent analysis.</li>
+    <li><strong>Database & Folder Storage:</strong> Saves images and metadata to PostgreSQL and structured folders.</li>
+    <li><strong>Main Clustering:</strong> ResNet50 feature extraction, PCA scaling, and Agglomerative Clustering to group images by deep visual features.</li>
+    <li><strong>Sub-Clustering with Color Vector:</strong> Self-designed HSV-based color distribution vectors enable fine-grained grouping within main clusters.</li>
+    <li><strong>Final Organization:</strong> Stores clusters and sub-clusters in organized folders for efficient browsing and use.</li>
+  </ul>
+
+  <h3>Technical Highlights</h3>
+  <ul>
+    <li>Modular Python code structure for ingestion, preprocessing, clustering, and sub-clustering.</li>
+    <li>Deep feature extraction with ResNet50 and PCA for main clustering.</li>
+    <li>Innovative color vector sub-clustering for high-precision visual grouping.</li>
+    <li>PostgreSQL database integration and hierarchical folder storage.</li>
+    <li>Scalable pipeline capable of handling large image datasets efficiently.</li>
+  </ul>
+
+  <h3>Impact & Use Case</h3>
+  <ul>
+    <li>Automates clustering and fine-grained organization of single-image ads and short videos.</li>
+    <li>Enables precise visual grouping using a combination of deep features and color vectors.</li>
+    <li>Provides hierarchical, browsable folder structure for easy access and analysis.</li>
+    <li>Supports large-scale multimedia datasets with modular, maintainable Python code.</li>
+  </ul>
+
+  <p style="font-size:0.9em; color:gray; margin-top:15px;">
+    <em>Note: Source code is confidential and cannot be publicly shared due to company agreements. 
+    Diagrams and descriptions reflect my contributions.</em>
+  </p>
 </section>
 
   <section  id ="project4-details" >
