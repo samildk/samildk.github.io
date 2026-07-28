@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hobbies- Samira Aslani</title>
+  <title>Programming - Samira Aslani</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -204,11 +204,69 @@ section h2 {
       </figure>
     </div>
     
+    <!-- Project 7 -->
+
+    <div class="masonry-item">
+      <figure>
+        <a href="#project7-details">
+          <img src="image/Alia.png" alt="Project 7 Image">
+        </a>
+
+        <figcaption>
+          <h3>Multi-Agent Engagement & Content Pipeline Portal</h3>
+
+          <p><strong>Tech Used:</strong> Django | PostgreSQL | FastAPI | LangChain | GPT-4o-mini | Docker</p>
+
+        </figcaption>
+      </figure>
+    </div>
+
     <!-- More projects can be added similarly -->
   </div>
 </section>
 
 
+
+  <section id ="project7-details">
+
+  <h2>Multi-Agent Engagement & Content Pipeline Portal</h2>
+  <img src="image/Alia.png" alt="Multi-Agent Engagement & Content Pipeline Portal" style="width:100%; max-width:900px; margin-bottom:20px;">
+
+  <p>
+    Developed a full-stack <strong>Django + PostgreSQL</strong> engagement portal integrated with a <strong>six-stage AI content pipeline</strong> that converts raw strategic briefs into finished, brand-consistent Persian content. Combined OTP-based authentication, assignment tracking, and event logging with a modular multi-agent architecture built on FastAPI and LangChain.
+  </p>
+
+  <h3>Agent Pipeline Overview</h3>
+  <ul>
+    <li><strong>Strategic Input Interpreter:</strong> Reads raw Persian/English briefs, extracts core intent, driving forces, tensions, and constraints, and flags missing information for clarification.</li>
+    <li><strong>Narrative Strategist:</strong> Builds the master narrative, story angle, and primary/secondary messaging from the interpreted brief.</li>
+    <li><strong>Audience Mapper:</strong> Defines primary and secondary audiences, tone guidance, and communication mode.</li>
+    <li><strong>Content Planner:</strong> Breaks the narrative into a content plan matrix of 3-5 content units, each with role, format, and priority.</li>
+    <li><strong>Brand Guardian:</strong> Applies brand tone, colors, and do/don't rules to each content unit.</li>
+    <li><strong>Content Generator:</strong> Produces two Persian draft alternatives per unit, then a polished final version after admin review.</li>
+  </ul>
+
+  <h3>Technical Highlights</h3>
+  <ul>
+    <li>Django 5 + PostgreSQL backend with custom OTP authentication (SHA256-hashed, 5-minute expiry, attempt limiting).</li>
+    <li>Six independent FastAPI + LangChain (GPT-4o-mini) microservices, one per pipeline stage, each with its own set of chained prompt skills.</li>
+    <li>Structured JSON handoff between stages, with a clarification loop that lets the pipeline pause and ask the user for missing fields instead of failing silently.</li>
+    <li>A workflow execution model tracks every pipeline run (status, input/output JSON, timestamps) for full auditability.</li>
+    <li>Docker/docker-compose environment isolation, with separate Python virtual environments for the web app and the agent services.</li>
+  </ul>
+
+  <h3>Impact & Use Case</h3>
+  <ul>
+    <li>Automates the full path from a rough strategic brief to ready-to-publish, brand-consistent Persian content.</li>
+    <li>Removes manual handoffs between strategy, narrative, audience, planning, and brand review — one pipeline run replaces several rounds of back-and-forth.</li>
+    <li>Human-in-the-loop review at the final generation step keeps quality control without giving up automation earlier in the pipeline.</li>
+    <li>Built as an extensible portal: new stages, assignment types, and reporting views can be added without restructuring the core data model.</li>
+  </ul>
+
+  <p style="font-size:0.9em; color:gray; margin-top:15px;">
+    <em>Note: This is a personal project built independently to explore Django and agentic AI system design.</em>
+  </p>
+</section>
 
   <section id ="project6-details" >
 
