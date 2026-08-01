@@ -243,6 +243,66 @@
 
       </div>
 
+            <!-- CMB Convolutional Autoencoder -->
+      <div class="w3-card w3-white w3-padding research-section">
+        <h2>Reconstructing Masked CMB Maps with a Convolutional Autoencoder</h2>
+        <h3>Research Project (2021) | Dr. M. Farhang</h3>
+
+      <div class="research-links">
+
+  <!-- GitHub -->
+  <a href="https://github.com/samildk/cmb-autoencoder"
+     target="_blank"
+     style="text-decoration:none;">
+
+    <div style="display:inline-flex; align-items:center;
+                padding:6px 14px;
+                font-size:14px;
+                border:1px solid #ccc;
+                border-radius:6px;
+                color:#333;
+                background:#f8f8f8;
+                transition:0.2s;">
+      <i class="fa fa-github" style="font-size:18px; margin-right:8px;"></i>
+      <span>GitHub</span>
+    </div>
+  </a>
+  <div class="research-images w3-margin-top">
+          <img src="Research/cmb_pipeline_diagram.png" alt="Convolutional autoencoder pipeline for CMB patch reconstruction" style="width:100%;">
+  </div>
+
+</div>
+
+        <p>
+          Real maps of the Cosmic Microwave Background always carry holes: regions contaminated by galactic
+          foregrounds and point sources are masked out, leaving gaps that complicate any downstream statistical
+          analysis. This project trains a convolutional autoencoder to learn the statistical structure of clean CMB
+          patches so that it can reconstruct &mdash; inpaint &mdash; the masked regions of a map. The full pipeline is
+          built end to end, from simulating the data to training and evaluating the network.
+        </p>
+        <p>
+          The training data is generated rather than borrowed. Using <em>healpy</em>, I synthesize Gaussian CMB
+          realizations from a theory angular power spectrum and validate every realization by comparing its recovered
+          spectrum D<sub>&#8467;</sub> = &#8467;(&#8467;+1)C<sub>&#8467;</sub>/2&pi; against the input. The curved sky is
+          then projected into flat square patches, which a custom data provider streams into the model: it crops
+          256&times;256 tiles, injects Gaussian noise at a fixed signal-to-noise ratio, optionally punches masks, and
+          normalizes each tile to zero mean and unit variance.
+        </p>
+        <p>
+          The network is a symmetric convolutional autoencoder built in TensorFlow/Keras: a stack of strided
+          convolutional layers encodes each patch into a compact latent representation, and a mirrored stack of
+          upsampling and convolutional layers decodes it back to full resolution. It is trained to minimize the
+          reconstruction error between input and output (mean-squared error, Adam optimizer), and can be trained either
+          to denoise clean patches or to fill masked regions directly.
+        </p>
+
+        <p style="font-size:0.9rem; color:#555;">
+          <strong>Tools:</strong> Python, TensorFlow/Keras, healpy, NumPy, Matplotlib.
+        </p>
+
+      </div>
+
+
 
       <!-- Head 2 -->
       <div class="w3-card w3-white w3-padding research-section">
